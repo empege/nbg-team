@@ -1,0 +1,16 @@
+.o-masthead {
+  background-color: rgba($c-black, 0.1);
+
+  &__logo-wrapper {
+    width: 100px;
+    display: inline-block;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &--active {
+    background-color: $c-white;
+  }
+}

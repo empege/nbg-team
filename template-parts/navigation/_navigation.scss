@@ -1,0 +1,11 @@
+.m-navigation {
+  &__item {
+    color: $c-white;
+  }
+
+  &--active {
+    .m-navigation__item {
+      color: $c-black;
+    }
+  }
+}

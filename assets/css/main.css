@@ -1,0 +1,25 @@
+.g-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.o-masthead {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.o-masthead__logo-wrapper {
+  width: 100px;
+  display: inline-block;
+}
+.o-masthead__logo {
+  width: 100%;
+}
+.o-masthead--active {
+  background-color: #fff;
+}
+
+.m-navigation__item {
+  color: #fff;
+}
+.m-navigation--active .m-navigation__item {
+  color: #000;
+}
