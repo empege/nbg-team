@@ -1,10 +1,39 @@
 .m-navigation {
+  &__items {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
   &__item {
+    font-size: 12px;
+    margin-right: 40px;
+    display: flex;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &--active {
+      .m-navigation__link {
+        background-color: $c-special;
+        padding: 12px 24px;
+      }
+    }
+  }
+
+  &__link {
     color: $c-white;
+    display: flex;
+    align-self: center;
+
+    &--active {
+      color: $c-special;
+    }
   }
 
   &--active {
-    .m-navigation__item {
+    .m-navigation__item:not(.m-navigation__item--active) .m-navigation__link {
       color: $c-black;
     }
   }

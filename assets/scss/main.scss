@@ -1,9 +1,12 @@
 @import "partials/fonts";
 @import "partials/variables";
 @import "partials/mixins";
+@import "partials/reset";
 @import "partials/grid";
 
 // Global components
 @import "../../template-parts/1pager/1pager";
 @import "../../template-parts/masthead/masthead";
 @import "../../template-parts/navigation/navigation";
+@import "../../template-parts/hero/hero";
+@import "../../template-parts/service-description/service-description";

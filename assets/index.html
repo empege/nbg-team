@@ -13,20 +13,22 @@
   <!-- Masthead Start -->
   <div class="o-masthead">
 
-    <div class="g-container">
+    <div class="g-container h-flex-row h-flex-space-between">
 
       <div class="o-masthead__logo-wrapper">
-        <img class="o-masthead__logo" src="./img/logo.png" alt="logo">
+        <a class="o-masthead__logo" href="#">
+          <img class="o-masthead__logo-img" src="./img/logo.png" alt="logo">
+        </a>
       </div>
 
       <!-- Navigation Start -->
-      <nav class="m-navigation m-navigation--active">
+      <nav class="m-navigation">
         <ul class="m-navigation__items">
-          <li class="m-navigation__item-wrapper"><a class="m-navigation__item" href="#"/>Home</a></li>
-          <li class="m-navigation__item-wrapper"><a class="m-navigation__item" href="#desktop"/>Desktop PC</a></li>
-          <li class="m-navigation__item-wrapper"><a class="m-navigation__item" href="#laptop"/>Laptop PC</a></li>
-          <li class="m-navigation__item-wrapper"><a class="m-navigation__item" href="#odrzavanje"/>Redovno održavanje</a></li>
-          <li class="m-navigation__item-wrapper m-navigation__item--active"><a class="m-navigation__item" href="#kontakt"/>KONTAKT</a></li>
+          <li class="m-navigation__item"><a class="m-navigation__link m-navigation__link--active" href="#"/>Home</a></li>
+          <li class="m-navigation__item"><a class="m-navigation__link" href="#desktop"/>Desktop PC</a></li>
+          <li class="m-navigation__item"><a class="m-navigation__link" href="#laptop"/>Laptop PC</a></li>
+          <li class="m-navigation__item"><a class="m-navigation__link" href="#odrzavanje">Redovno održavanje</a></li>
+          <li class="m-navigation__item m-navigation__item--active"><a class="m-navigation__link" href="#kontakt"/>KONTAKT</a></li>
         </ul>
       </nav>
       <!-- Navigation End -->
@@ -39,32 +41,44 @@
   <!-- Header Slider Start -->
   <header class="m-hero">
     
-    <div class="m-hero__slide">
-      <img src="./img/slide.png" alt="slide" class="m-hero__image">
-      <h1 class="m-hero__title">NAJBOLJA <del>IT 4 BIZ </del>REŠENJA U GRADU</h1>
-      <button class="m-hero__cta-btn">KONTAKTIRAJTE NAS</button>
-    </div>
-    
-    <div class="m-hero__slide">
-      <img src="./img/slide.png" alt="slide" class="m-hero__image">
-      <h2 class="m-hero__title">NAJBOLJA <del>IT 4 BIZ </del>REŠENJA U GRADU</h2>
-      <button class="m-hero__cta-btn">KONTAKTIRAJTE NAS</button>
-    </div>
+    <div class="m-hero__slides">
 
-    <div class="m-hero__slide">
-      <img src="./img/slide.png" alt="slide" class="m-hero__image">
-      <h2 class="m-hero__title">NAJBOLJA <del>IT 4 BIZ </del>REŠENJA U GRADU</h2>
-      <button class="m-hero__cta-btn">KONTAKTIRAJTE NAS</button>
-    </div>
+      <div class="m-hero__slide">
+        <img src="./img/hero.jpg" alt="slide" class="m-hero__image">
+        <div class="m-hero__slide-text">
+          <h1 class="m-hero__title">NAJBOLJA <del>IT 4 BIZ </del>REŠENJA U GRADU</h1>
+          <button class="m-hero__cta-btn">KONTAKTIRAJTE NAS</button>
+        </div>
+      </div>
+      
+      <div class="m-hero__slide">
+        <img src="./img/hero.jpg" alt="slide" class="m-hero__image">
+        <div class="m-hero__slide-text">
+          <h1 class="m-hero__title">NAJBOLJA <del>IT 4 BIZ </del>REŠENJA U GRADU</h1>
+          <button class="m-hero__cta-btn">KONTAKTIRAJTE NAS</button>
+        </div>
+      </div>
+      
+      <div class="m-hero__slide">
+        <img src="./img/hero.jpg" alt="slide" class="m-hero__image">
+        <div class="m-hero__slide-text">
+          <h1 class="m-hero__title">NAJBOLJA <del>IT 4 BIZ </del>REŠENJA U GRADU</h1>
+          <button class="m-hero__cta-btn">KONTAKTIRAJTE NAS</button>
+        </div>
+      </div>
+      
+      <div class="m-hero__slide">
+        <img src="./img/hero.jpg" alt="slide" class="m-hero__image">
+        <div class="m-hero__slide-text">
+          <h1 class="m-hero__title">NAJBOLJA <del>IT 4 BIZ </del>REŠENJA U GRADU</h1>
+          <button class="m-hero__cta-btn">KONTAKTIRAJTE NAS</button>
+        </div>
+      </div>
 
-    <div class="m-hero__slide">
-      <img src="./img/slide.png" alt="slide" class="m-hero__image">
-      <h2 class="m-hero__title">NAJBOLJA <del>IT 4 BIZ </del>REŠENJA U GRADU</h2>
-      <button class="m-hero__cta-btn">KONTAKTIRAJTE NAS</button>
     </div>
 
     <div class="m-hero__bullets-wrapper">
-      <div class="m-hero__bullet"></div>
+      <div class="m-hero__bullet m-hero__bullet--active"></div>
       <div class="m-hero__bullet"></div>
       <div class="m-hero__bullet"></div>
       <div class="m-hero__bullet"></div>
@@ -149,7 +163,7 @@
         <div class="m-service-description__text-wrapper">
   
           <!-- U ovom slucaju ne postoji -->
-          <div class="m-service-description__reference-title-wrapper"></div>
+          <!-- <div class="m-service-description__reference-title-wrapper"></div> -->
 
           <h4 class="m-service-description__text-title">Servis Desktop Računara</h4>
   
@@ -172,7 +186,7 @@
           </div>
   
           <!-- U ovom slucaju ne postoji -->
-          <button class="m-service-description__cta-btn"></button>
+          <!-- <button class="m-service-description__cta-btn"></button> -->
           
         </div>
         
@@ -207,13 +221,13 @@
             </ul>
             
             <p>
-              Sve što treba da uradite je da nam pošaljete e-mail na <del>office@nbgteam.rs</del> sa Vašim potrebama, a naš tim će Vam odgovoriti sa predlogom rešenja u najkraćem vremenskom roku...
+              Sve što treba da uradite je da nam pošaljete e-mail na <del><strong>office@nbgteam.rs</strong></del> sa Vašim potrebama, a naš tim će Vam odgovoriti sa predlogom rešenja u najkraćem vremenskom roku...
             </p>
             
           </div>
   
           <!-- U ovom slucaju ne postoji -->
-          <button class="m-service-description__cta-btn"></button>
+          <!-- <button class="m-service-description__cta-btn"></button> -->
           
         </div>
         
@@ -433,10 +447,10 @@
           <!-- Navigation Start -->
           <nav class="m-navigation">
             <ul class="m-navigation__items">
-              <li class="m-navigation__item"><a href="#desktop"/>Desktop PC</a></li>
-              <li class="m-navigation__item"><a href="#laptop"/>Laptop PC</a></li>
-              <li class="m-navigation__item"><a href="#odrzavanje"/>Redovno održavanje</a></li>
-              <li class="m-navigation__item"><a href="#kontakt"/>KONTAKT</a></li>
+              <li class="m-navigation__item"><a class="m-navigation__link" href="#desktop"/>Desktop PC</a></li>
+              <li class="m-navigation__item"><a class="m-navigation__link" href="#laptop"/>Laptop PC</a></li>
+              <li class="m-navigation__item"><a class="m-navigation__link" href="#odrzavanje"/>Redovno održavanje</a></li>
+              <li class="m-navigation__item"><a class="m-navigation__link" href="#kontakt"/>KONTAKT</a></li>
             </ul>
           </nav>
           <!-- Navigation End -->
