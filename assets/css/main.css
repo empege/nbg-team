@@ -55,6 +55,10 @@ a {
   justify-content: space-between;
 }
 
+.h-centered {
+  text-align: center;
+}
+
 .o-masthead {
   position: fixed;
   top: 0;
@@ -191,7 +195,11 @@ a {
 }
 
 .m-service-description {
-  padding: 30px 0;
+  padding: 0 0 50px 0;
+  overflow: auto;
+}
+.m-service-description--pale {
+  background-color: #f2f2f2;
 }
 .m-service-description__content-wrapper {
   display: flex;
@@ -227,12 +235,13 @@ a {
   width: 45px;
   height: 2px;
   margin: 0 5px;
-  background-color: gray;
+  background-color: #cccccc;
   align-self: center;
 }
 .m-service-description__title {
   font-size: 26px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .m-service-description__text-title {
   font-weight: bold;
@@ -273,4 +282,292 @@ a {
   color: #fff;
   border: none;
   margin-bottom: 20px;
+}
+
+.m-service-cards {
+  overflow: auto;
+}
+.m-service-cards--dark {
+  background-color: #000;
+  color: #fff;
+}
+.m-service-cards--background-img {
+  background-image: url("../../assets/img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.m-service-cards__reference-title-wrapper {
+  margin-top: 50px;
+}
+.m-service-cards__reference-title-wrapper--centered .m-service-cards__reference-title {
+  justify-content: center;
+}
+.m-service-cards__reference-title-wrapper--centered .m-service-cards__title {
+  text-align: center;
+}
+.m-service-cards__reference-title {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.m-service-cards__reference-title-divider {
+  width: 45px;
+  height: 2px;
+  margin: 0 5px;
+  background-color: #cccccc;
+  align-self: center;
+}
+.m-service-cards__title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.m-service-cards__reference-paragraph {
+  margin-bottom: 30px;
+}
+.m-service-cards__richtext {
+  line-height: 2;
+  margin-bottom: 30px;
+}
+.m-service-cards__richtext p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.m-service-cards__richtext strong {
+  font-weight: bold;
+}
+.m-service-cards__richtext ul {
+  columns: 2;
+  padding-left: 16px;
+}
+.m-service-cards__richtext li::before {
+  position: relative;
+  content: "■";
+  color: red;
+  display: inline-block;
+  width: 16px;
+  top: -2px;
+  margin-left: -16px;
+}
+.m-service-cards__richtext del {
+  text-decoration: none;
+  color: red;
+}
+.m-service-cards__cards-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+}
+.m-service-cards__card {
+  margin: 0 15px;
+  background-color: #fff;
+  color: #000;
+  border-top: 3px solid red;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 16px 5px black;
+}
+.m-service-cards__card:first-child {
+  margin-left: 0;
+}
+.m-service-cards__card:last-child {
+  margin-right: 0;
+}
+.m-service-cards__card-content {
+  padding: 30px 25px 0;
+  text-align: center;
+}
+.m-service-cards__card-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.m-service-cards__text {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.m-service-cards__card-image {
+  width: 100%;
+}
+.m-service-cards__card-btn {
+  background-color: #fff;
+  color: red;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.m-service-cards__cta-btn-wrapper {
+  margin-bottom: 30px;
+}
+.m-service-cards__cta-btn {
+  background-color: red;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  padding: 14px 30px;
+  cursor: pointer;
+}
+.m-service-cards__mini-cards-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+}
+.m-service-cards__mini-card {
+  margin: 0 15px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 0px 16px 3px black;
+  margin-bottom: 30px;
+}
+.m-service-cards__mini-card--special {
+  background-color: red;
+  color: #fff;
+}
+.m-service-cards__mini-card--special .m-service-cards__mini-card-btn {
+  background-color: #fff;
+  color: red;
+}
+.m-service-cards__mini-card:first-child {
+  margin-left: 0;
+}
+.m-service-cards__mini-card:last-child {
+  margin-right: 0;
+}
+.m-service-cards__mini-card-image-wrapper {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.m-service-cards__mini-card-image-icon {
+  width: 40%;
+}
+.m-service-cards__mini-card-title {
+  margin-bottom: 15px;
+}
+.m-service-cards__mini-card-btn {
+  border: none;
+  background-color: red;
+  color: #fff;
+  padding: 10px 16px;
+  align-self: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.m-contact {
+  display: flex;
+}
+.m-contact__map-wrapper {
+  width: 50%;
+}
+.m-contact__content-wrapper {
+  width: 50%;
+  padding: 30px;
+}
+.m-contact__reference-title-wrapper {
+  margin-top: 50px;
+}
+.m-contact__reference-title-wrapper--centered .m-service-cards__reference-title {
+  justify-content: center;
+}
+.m-contact__reference-title-wrapper--centered .m-service-cards__title {
+  text-align: center;
+}
+.m-contact__reference-title {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.m-contact__reference-title-divider {
+  width: 45px;
+  height: 2px;
+  margin: 0 5px;
+  background-color: #cccccc;
+  align-self: center;
+}
+.m-contact__title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.m-contact__reference-paragraph {
+  margin-bottom: 30px;
+}
+.m-contact__richtext {
+  line-height: 2;
+  margin-bottom: 30px;
+}
+.m-contact__richtext p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.m-contact__richtext strong {
+  font-weight: bold;
+}
+.m-contact__richtext ul {
+  padding-left: 16px;
+}
+.m-contact__richtext li::before {
+  position: relative;
+  content: "■";
+  color: red;
+  display: inline-block;
+  width: 16px;
+  top: -2px;
+  margin-left: -16px;
+  margin-bottom: 15px;
+}
+.m-contact__richtext del {
+  text-decoration: none;
+  color: red;
+}
+
+.m-footer {
+  background-color: #1b1b1b;
+}
+.m-footer__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.m-footer__logo-wrapper {
+  margin-bottom: 10px;
+}
+.m-footer__logo {
+  width: 130px;
+}
+.m-footer__social-wrapper {
+  color: #fff;
+  text-align: right;
+}
+.m-footer__social-text {
+  margin-bottom: 10px;
+}
+.m-footer__social-items {
+  display: flex;
+  justify-content: end;
+}
+.m-footer__social-item {
+  margin-left: 10px;
+}
+.m-footer__social-item i {
+  font-size: 26px;
+  color: red;
+}
+.m-footer__copy-wrapper {
+  color: #fff;
+  border-top: 1px solid #cccccc;
+  padding: 10px 0 20px;
+  font-size: 10px;
 }

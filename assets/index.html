@@ -117,7 +117,7 @@
           </div>
 
           <!-- U ovom slucaju ne postoji -->
-          <h4 class="m-service-description__text-title"></h4>
+          <!-- <h4 class="m-service-description__text-title"></h4> -->
   
           <div class="m-service-description__richtext h-richtext">
             <!-- Ako se unet tekst pretvara u <p> u WP-u -->
@@ -137,7 +137,7 @@
   <!-- Section 1 End -->
 
   <!-- Section 2 Start -->
-  <section class="m-service-description m-service-description--gray" id="desktop"><!-- Ili h-c-gray? -->
+  <section class="m-service-description m-service-description--pale" id="desktop"><!-- Ili h-c-gray? -->
 
     <div class="g-container">
 
@@ -237,23 +237,23 @@
     
   </section>
   
-  <!-- Section 3 Start -->
-  <section class="m-service-cards" id="laptop">
+  <!-- Section 3 Start - Kako stavljaju boju pozadine? Da li ja imam neke teme i to je to, ili biraju sta god? Ako biraju sta god, jel ja to posle stavljam kroz js? -->
+  <section class="m-service-cards m-service-cards--dark" id="laptop">
 
     <div class="g-container">
 
-      <div class="m-service-cards__reference-title-wrapper">
+      <div class="m-service-cards__reference-title-wrapper m-service-cards__reference-title-wrapper--centered">
 
-        <h2 class="m-service-cards__reference-title h-justify-center"><!-- Da li je ova helper klasa ok? -->
+        <h2 class="m-service-cards__reference-title">
           <span class="m-service-cards__reference-title-order">03</span>
           <span class="m-service-cards__reference-title-divider"></span>
           <span class="m-service-cards__reference-title-text">LAPTOP</span>
         </h2>
         
-        <h3 class="m-service-cards__title h-justify-center">LAPTOP PC</h3>
+        <h3 class="m-service-cards__title">LAPTOP PC</h3>
 
         <!-- U ovom slucaju ne postoji -->
-        <p class="m-service-cards__reference-paragraph"></p>
+        <!-- <p class="m-service-cards__reference-paragraph"></p> -->
 
       </div>
 
@@ -262,16 +262,20 @@
         <!-- Card 1 Start -->
         <article class="m-service-cards__card">
 
-          <h3 class="m-service-cards__card-title">Zamena termalne paste</h3>
+          <div class="m-service-cards__card-content">
 
-          <p class="m-service-cards__text">
-            Jako je bitno da Vam se računar ne pregreva.
-            Za to je zaslužna dobra provodna termalna pasta i čist cooler. Ukoliko primetite da Vam je računar topao sa spoljne strane to znači da je još topliji unutra.
-          </p>
+            <h3 class="m-service-cards__card-title">Zamena termalne paste</h3>
 
-          <button class="m-service-cards__card-btn">POZOVITE NAS</button>
+            <p class="m-service-cards__text">
+              Jako je bitno da Vam se računar ne pregreva.
+              Za to je zaslužna dobra provodna termalna pasta i čist cooler. Ukoliko primetite da Vam je računar topao sa spoljne strane to znači da je još topliji unutra.
+            </p>
 
-          <img class="m-service-cards__card-image" src="./img/slide.png" alt="cooler">
+            <button class="m-service-cards__card-btn">POZOVITE NAS</button>
+
+          </div>
+
+          <img class="m-service-cards__card-image" src="./img/hero.jpg" alt="cooler">
 
         </article>
         <!-- Card 1 End -->
@@ -279,16 +283,19 @@
         <!-- Card 2 Start -->
         <article class="m-service-cards__card">
 
-          <h3 class="m-service-cards__card-title">Čišćenje od virusa</h3>
+          <div class="m-service-cards__card-content">
 
-          <p class="m-service-cards__text">
-            Čišćenje od virusa
-            Najsavremenijim alatima 99% uspešno čistimo od virusa i malware-a. Ukoliko čišćenje ne uspe predlažemo kompletnu reinstalaciju windows-a.
-          </p>
+            <h3 class="m-service-cards__card-title">Čišćenje od virusa</h3>
 
-          <button class="m-service-cards__card-btn">POZOVITE NAS</button>
+            <p class="m-service-cards__text">
+              Čišćenje od virusa. <!-- Kako ovde da stavim new line? A da su zapravo oni to stavili, ne ja? -->
+              Najsavremenijim alatima 99% uspešno čistimo od virusa i malware-a. Ukoliko čišćenje ne uspe predlažemo kompletnu reinstalaciju windows-a.
+            </p>
 
-          <img class="m-service-cards__card-image" src="./img/slide.png" alt="laptop">
+            <button class="m-service-cards__card-btn">POZOVITE NAS</button>
+          </div>
+
+          <img class="m-service-cards__card-image" src="./img/hero.jpg" alt="laptop">
 
         </article>
         <!-- Card 2 End -->
@@ -296,22 +303,25 @@
         <!-- Card 3 Start -->
         <article class="m-service-cards__card">
 
-          <h3 class="m-service-cards__card-title">Zamena DC konektora</h3>
+          <div class="m-service-cards__card-content">
 
-          <p class="m-service-cards__text">
-            Ukoliko primetite da Vaš laptop neće da se puni, a lampica na punjaču svetli, sigurno je problem u konektoru punjenja. To je konektor koji se nalazi unutar laptopa i podložan je lompljenju.
-          </p>
+            <h3 class="m-service-cards__card-title">Zamena DC konektora</h3>
 
-          <button class="m-service-cards__card-btn">POZOVITE NAS</button>
+            <p class="m-service-cards__text">
+              Ukoliko primetite da Vaš laptop neće da se puni, a lampica na punjaču svetli, sigurno je problem u konektoru punjenja. To je konektor koji se nalazi unutar laptopa i podložan je lompljenju.
+            </p>
 
-          <img class="m-service-cards__card-image" src="./img/slide.png" alt="housing">
+            <button class="m-service-cards__card-btn">POZOVITE NAS</button>
+          </div>
+
+          <img class="m-service-cards__card-image" src="./img/hero.jpg" alt="housing">
 
         </article>
         <!-- Card 3 End -->
 
       </div>
       
-      <div class="m-service-cards__cta-btn-wrapper h-justify-center">
+      <div class="m-service-cards__cta-btn-wrapper h-centered">
         <button class="m-service-cards__cta-btn">SAZNAJTE VIŠE</button>
       </div>
 
@@ -320,7 +330,7 @@
   </section>
 
   <!-- Section 4 Start -->
-  <section class="m-service-cards" id="odrzavanje">
+  <section class="m-service-cards m-service-cards--dark m-service-cards--background-img" id="odrzavanje">
 
     <div class="g-container">
 
@@ -338,15 +348,13 @@
 
       </div>
 
-      </div>
-
       <div class="m-service-cards__mini-cards-wrapper">
         
         <!-- Card 1 Start -->
         <article class="m-service-cards__mini-card">
           
           <div class="m-service-cards__mini-card-image-wrapper">
-            <img class="m-service-cards__mini-card-image-icon" src="./img/slide.png" alt="tools">
+            <img class="m-service-cards__mini-card-image-icon" src="./img/hero.jpg" alt="tools">
           </div>
 
           <h3 class="m-service-cards__mini-card-title">Održavanje hardware-a i reinstalacija software-a</h3>
@@ -360,7 +368,7 @@
         <article class="m-service-cards__mini-card">
           
           <div class="m-service-cards__mini-card-image-wrapper">
-            <img class="m-service-cards__mini-card-image-icon" src="./img/slide.png" alt="tools">
+            <img class="m-service-cards__mini-card-image-icon" src="./img/hero.jpg" alt="tools">
           </div>
 
           <h3 class="m-service-cards__mini-card-title">Online podrška (personal IT)</h3>
@@ -371,10 +379,10 @@
         <!-- Card 2 End -->
         
         <!-- Card 3 Start -->
-        <article class="m-service-cards__mini-card">
+        <article class="m-service-cards__mini-card m-service-cards__mini-card--special">
           
           <div class="m-service-cards__mini-card-image-wrapper">
-            <img class="m-service-cards__mini-card-image-icon" src="./img/slide.png" alt="tools">
+            <img class="m-service-cards__mini-card-image-icon" src="./img/hero.jpg" alt="tools">
           </div>
 
           <h3 class="m-service-cards__mini-card-title">All inclusive</h3>
@@ -386,6 +394,8 @@
 
       </div>
 
+    </div>
+
   </section>
 
   <!-- Section 5 Start -->
@@ -393,7 +403,7 @@
         
     <div class="m-contact__map-wrapper">
       <!-- Embded maps goes here -->
-      <img src="./img/slide.png">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45294.54632205515!2d20.35190509706822!3d44.803040199774884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6f75c3e024c5%3A0xe6866a73d4bdda43!2z0J3QvtCy0Lgg0JHQtdC-0LPRgNCw0LQsINCR0LXQvtCz0YDQsNC0!5e0!3m2!1ssr!2srs!4v1631132422420!5m2!1ssr!2srs" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
         
     <div class="m-contact__content-wrapper">
@@ -459,7 +469,7 @@
 
         <div class="m-footer__social-wrapper">
 
-          <p>Zapratite nas:</p>
+          <p class="m-footer__social-text">Zapratite nas:</p>
 
           <div class="m-footer__social-items">
             
