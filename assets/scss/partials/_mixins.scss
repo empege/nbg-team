@@ -1,0 +1,30 @@
+@mixin reference-title() {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+@mixin reference-title-divider() {
+  width: 45px;
+  height: 2px;
+  margin: 0 5px;
+  background-color: $c-gray;
+  align-self: center;
+}
+
+@mixin title() {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+@mixin richtext-li-bullet() {
+  position: relative;
+  content: "\25A0";
+  color: red;
+  display: inline-block;
+  width: 16px;
+  top: -2px;
+  margin-left: -16px;
+}
