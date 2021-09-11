@@ -8,9 +8,20 @@
 
   &__content-wrapper {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include mq-tablet-s-up {
+      align-items: left;
+      flex-direction: row;
+    }
 
     &--reverse {
-      flex-direction: row-reverse;
+      flex-direction: column;
+
+      @include mq-tablet-s-up {
+        flex-direction: row-reverse;
+      }
 
       .m-service-description__text-wrapper {
         margin-left: 0;
@@ -19,7 +30,9 @@
   }
 
   &__image-wrapper {
-    width: 40%;
+    @include mq-tablet-s-up {
+      width: 40%;
+    }
   }
 
   &__image {
@@ -29,12 +42,16 @@
   }
 
   &__text-wrapper {
-    width: 60%;
-    margin-left: 60px;
+    @include mq-tablet-s-up {
+      width: 60%;
+      margin-left: 60px;
+    }
   }
 
   &__reference-title-wrapper {
-    margin-top: 50px;
+    @include mq-tablet-s-up {
+      margin-top: 50px;
+    }
   }
 
   &__reference-title {

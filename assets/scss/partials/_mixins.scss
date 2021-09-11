@@ -1,3 +1,71 @@
+@import "./_variables.scss";
+
+/* MEDIA QUERIES */
+// MEDIA UP
+@mixin mq-phone-s-up {
+  @media screen and (min-width: #{$bp-phone-s}px) {
+    @content;
+  }
+}
+
+@mixin mq-phone-l-up {
+  @media screen and (min-width: #{$bp-phone-l}px) {
+    @content;
+  }
+}
+
+@mixin mq-tablet-s-up {
+  @media screen and (min-width: #{$bp-tablet-s}px) {
+    @content;
+  }
+}
+
+@mixin mq-tablet-l-up {
+  @media screen and (min-width: #{$bp-tablet-l}px) {
+    @content;
+  }
+}
+
+@mixin mq-desktop-s-up {
+  @media screen and (min-width: #{$bp-desktop-s}px) {
+    @content;
+  }
+}
+
+@mixin mq-desktop-l-up {
+  @media screen and (min-width: #{$bp-desktop-l}px) {
+    @content;
+  }
+}
+
+// MEDIA RANGE
+@mixin mq-phone {
+  @media screen and (max-width: #{$bp-tablet-l - 1}px) {
+    @content;
+  }
+}
+
+@mixin mq-tablet {
+  @media screen and (min-width: #{$bp-tablet-s}px) and (max-width: #{$bp-desktop-s - 1}px) {
+    @content;
+  }
+}
+
+@mixin mq-desktop-s {
+  @media screen and (min-width: #{$bp-desktop-s}px) and (max-width: #{$bp-desktop-l - 1}px) {
+    @content;
+  }
+}
+
+/* INTERNET EXPLORER */
+@mixin if-ie {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+/* COMPONENTS */
+
 @mixin reference-title() {
   display: flex;
   font-size: 12px;

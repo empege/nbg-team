@@ -1,13 +1,22 @@
 .m-contact {
   display: flex;
+  flex-direction: column-reverse;
+
+  @include mq-tablet-s-up {
+    flex-direction: row;
+  }
 
   &__map-wrapper {
-    width: 50%;
+    @include mq-tablet-s-up {
+      width: 50%;
+    }
   }
 
   &__content-wrapper {
-    width: 50%;
     padding: 30px;
+    @include mq-tablet-s-up {
+      width: 50%;
+    }
   }
 
   &__reference-title-wrapper {
