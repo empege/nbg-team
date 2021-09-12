@@ -1,11 +1,46 @@
 .o-masthead {
+  visibility: hidden;
   position: fixed;
-  top: 0;
+  top: -1000px;
   left: 0;
   right: 0;
   z-index: 100;
   background-color: rgba($c-black, 0.3);
   padding: 20px;
+
+  &--sticky {
+    background-color: $c-white;
+  }
+
+  &--active {
+    @include mq-tablet-s-down() {
+      visibility: visible;
+      top: 0;
+      bottom: 0;
+      background-color: $c-black;
+
+      .o-masthead__container {
+        flex-direction: column;
+      }
+
+      .o-masthead__hamburger--open {
+        display: none;
+      }
+
+      .o-masthead__hamburger--close {
+        display: block;
+      }
+
+      .o-masthead__logo-wrapper {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include mq-tablet-s-up() {
+    visibility: visible;
+    top: 0;
+  }
 
   &__container {
     display: flex;
@@ -26,7 +61,47 @@
     object-fit: contain;
   }
 
-  &--active {
-    background-color: $c-white;
+  &__hamburger {
+    position: fixed;
+    visibility: visible;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+
+    &--open {
+      .o-masthead__hamburger-open-part {
+        width: 40px;
+        height: 4px;
+        background-color: $c-black;
+        margin: 7px 0;
+      }
+    }
+
+    &--close {
+      display: none;
+      &:before,
+      &:after {
+        position: absolute;
+        left: 15px;
+        content: " ";
+        height: 40px;
+        width: 4px;
+        background-color: $c-white;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    @include mq-tablet-s-up() {
+      visibility: hidden;
+    }
+  }
+
+  &__hamburger-part {
   }
 }

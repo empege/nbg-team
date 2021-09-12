@@ -38,6 +38,13 @@
   }
 }
 
+// MEDIA DOWN
+@mixin mq-tablet-s-down {
+  @media screen and (max-width: #{$bp-tablet-s - 1}px) {
+    @content;
+  }
+}
+
 // MEDIA RANGE
 @mixin mq-phone {
   @media screen and (max-width: #{$bp-tablet-l - 1}px) {

@@ -1,14 +1,25 @@
 .m-navigation {
   &__items {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
+
+    @include mq-tablet-s-up() {
+      flex-direction: row;
+    }
   }
 
   &__item {
-    font-size: 12px;
-    margin-right: 40px;
     display: flex;
+    font-size: 25px;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    @include mq-tablet-s-up() {
+      font-size: 12px;
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
 
     &:last-child {
       margin-right: 0px;
@@ -32,7 +43,7 @@
     }
   }
 
-  &--active {
+  &--sticky {
     .m-navigation__item:not(.m-navigation__item--active) .m-navigation__link {
       color: $c-black;
     }
