@@ -12,7 +12,7 @@
     flex-direction: column;
 
     @include mq-tablet-s-up {
-      align-items: left;
+      align-items: stretch;
       flex-direction: row;
     }
 

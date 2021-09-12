@@ -185,6 +185,7 @@ a {
   height: 80vh;
   position: relative;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .m-hero::before {
   content: "";
@@ -277,7 +278,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .m-service-description__content-wrapper {
-    align-items: left;
+    align-items: stretch;
     flex-direction: row;
   }
 }
@@ -374,6 +375,7 @@ a {
 
 .m-service-cards {
   overflow: auto;
+  padding: 0 0 50px 0;
 }
 .m-service-cards--dark {
   background-color: #1b1b1b;
@@ -514,7 +516,7 @@ a {
 .m-service-cards__mini-cards-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 120px;
 }
 @media screen and (min-width: 768px) {
   .m-service-cards__mini-cards-wrapper {
@@ -589,7 +591,7 @@ a {
   }
 }
 .m-contact__content-wrapper {
-  padding: 30px;
+  padding: 0 30px 30px;
 }
 @media screen and (min-width: 768px) {
   .m-contact__content-wrapper {
@@ -628,7 +630,11 @@ a {
 }
 .m-contact__richtext {
   line-height: 2;
-  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .m-contact__richtext {
+    margin-bottom: 30px;
+  }
 }
 .m-contact__richtext p {
   margin-bottom: 8px;
@@ -660,28 +666,54 @@ a {
 }
 .m-footer__content-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 20px 0;
 }
+@media screen and (min-width: 768px) {
+  .m-footer__content-wrapper {
+    flex-direction: row;
+  }
+}
 .m-footer__logo-wrapper {
-  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .m-footer__logo-wrapper {
+    text-align: left;
+    margin-bottom: 10px;
+  }
 }
 .m-footer__logo {
   width: 130px;
 }
 .m-footer__social-wrapper {
   color: #fff;
-  text-align: right;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .m-footer__social-wrapper {
+    text-align: right;
+  }
 }
 .m-footer__social-text {
   margin-bottom: 10px;
 }
 .m-footer__social-items {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .m-footer__social-items {
+    justify-content: end;
+  }
 }
 .m-footer__social-item {
   margin-left: 10px;
+}
+.m-footer__social-item:first-child {
+  margin-left: 0;
 }
 .m-footer__social-item i {
   font-size: 26px;

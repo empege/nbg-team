@@ -13,7 +13,7 @@
   }
 
   &__content-wrapper {
-    padding: 30px;
+    padding: 0 30px 30px;
     @include mq-tablet-s-up {
       width: 50%;
     }
@@ -51,7 +51,10 @@
 
   &__richtext {
     line-height: 2;
-    margin-bottom: 30px;
+
+    @include mq-tablet-s-up() {
+      margin-bottom: 30px;
+    }
 
     p {
       margin-bottom: 8px;

@@ -1,5 +1,6 @@
 .m-service-cards {
   overflow: auto;
+  padding: 0 0 50px 0;
 
   &--dark {
     background-color: $c-black;
@@ -153,7 +154,7 @@
   &__mini-cards-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 120px;
 
     @include mq-tablet-s-up {
       flex-direction: row;

@@ -3,12 +3,23 @@
 
   &__content-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 20px 0;
+
+    @include mq-tablet-s-up() {
+      flex-direction: row;
+    }
   }
 
   &__logo-wrapper {
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include mq-tablet-s-up() {
+      text-align: left;
+      margin-bottom: 10px;
+    }
   }
 
   &__logo {
@@ -17,7 +28,11 @@
 
   &__social-wrapper {
     color: $c-white;
-    text-align: right;
+    text-align: center;
+
+    @include mq-tablet-s-up() {
+      text-align: right;
+    }
   }
 
   &__social-text {
@@ -26,11 +41,19 @@
 
   &__social-items {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+
+    @include mq-tablet-s-up() {
+      justify-content: end;
+    }
   }
 
   &__social-item {
     margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     i {
       font-size: 26px;
